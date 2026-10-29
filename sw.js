@@ -1,8 +1,8 @@
 /* 奶油泡泡大作战 · 极简离线缓存 Service Worker
  * 策略：缓存优先 + 后台更新（stale-while-revalidate），忽略查询参数（?test 离线也能打开）
- * 发布新版本时修改 CACHE 名称即可让旧缓存失效。
+ * 发布新版本时修改 CACHE 名称即可让旧缓存失效（第二轮：v2）。
  */
-const CACHE = 'cream-bubble-v1';
+const CACHE = 'cream-bubble-v2';
 const ASSETS = ['./', './index.html', './sw.js'];
 
 self.addEventListener('install', e => {
